@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+ :root {
+     --black-color: #232323;
+     --hover-color: #3D8B74;
+     --gray-color: #818181;
+ }
+.wrapper {
+    width: 100%;
+}
+.header {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.header-content {
+    width: 1166px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 77px;
+    margin: 0 auto;
+}
+.header__logo, .footer__logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 38px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: var(--black-color);
+
+}
+
+.header__right {
+    width: 441px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #818181;
+
+}
+
+.instagram {
+    width: 277px;
+    height: 320px;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.main-container {
+    width: 1166px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 75px;
+}
+
+.blog {
+    width: 792px;
+}
+.blog__title {
+    font-family: "Josefin Sans" sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+}
+.blog__time {
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+    color: #818181;
+    padding-bottom: 47px;
+}
+
+.blog__img {
+    float: left;
+    padding-right: 41px;
+}
+.blog__text {
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    color: #000000;
+}
+
+.categories-list {
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    padding: 36px 0 36px 32px;
+    margin-bottom: 91px;
+}
+
+.categories__title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 26px;
+}
+
+.categories__elem {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 1.5px;
+    color: #000000;
+    cursor: pointer;
+}
+.categories__elem:hover {
+    font-weight: bold;
+    color: var(--hover-color);
+}
+.comment__title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    color: #000000;
+    padding-bottom: 20px;
+    margin-top: -40px;
+}
+
+
+.comment-block {
+    width: 792px;
+    height: 447px;
+    padding: 90px 115px;
+    background: #F9F9F9;
+    border: 1px dashed #CCCCCC;
+    box-sizing: border-box;
+    margin: 88px 0 99px 0;
+}
+
+.comment-container {
+    display: block;
+}
+
+.input__name, .input__email, .input__text {
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 16px;
+    font-family: "Mulish", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    color: #777777;
+    margin-bottom: 30px;
+}
+
+.input__text {
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    color: #000000;
+    width: 566px;
+    height: 144px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input__email {
+    width: 323px;
+    margin-left: 12px;
+}
+input:focus {
+    outline-color: var(--hover-color);
+}
+.input__text:focus {
+    outline-color: var(--hover-color);
+}
+
+.send__btn {
+    padding: 20px 70px;
+    background-color: var(--hover-color);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: var(--black-color);
+
+}
+
+.footer-block {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.footer__img {
+    border-radius: 50%;
+    padding-bottom: 23px;
+}
+
+.footer__logo {
+    color: #FFFFFF;
+    padding-bottom: 23px;
+}
+.social-list {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    height: 92px;
+    width: 100%;
+    background: #323232;
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
